@@ -1,0 +1,34 @@
+/* All elements are owned by the extension; no ChatGPT class names are required. */
+#chatgpt-customizer-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.chatgpt-customizer-background__image,
+.chatgpt-customizer-background__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.chatgpt-customizer-background__image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.chatgpt-customizer-background__overlay {
+  background: rgb(0 0 0 / 18%);
+}
+
+/* Keeps the background behind the app while preserving ChatGPT's own component styles. */
+html.chatgpt-customizer--background-active {
+  background: transparent !important;
+}
+
+html.chatgpt-customizer--background-active body {
+  background: transparent !important;
+}

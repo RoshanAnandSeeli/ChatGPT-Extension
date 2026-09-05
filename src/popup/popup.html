@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Customizer</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header>
+        <h1>ChatGPT Customizer</h1>
+        <p>Make ChatGPT feel like yours.</p>
+      </header>
+      <section aria-labelledby="background-title">
+        <h2 id="background-title">Background</h2>
+        <div id="preview" class="preview" hidden><img id="preview-image" alt="Current background preview" /></div>
+        <label class="button button--primary" for="background-input">Choose Image</label>
+        <input id="background-input" type="file" accept="image/jpeg,image/png,image/webp" />
+        <button id="remove-background" class="button button--secondary" type="button">Remove Background</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
