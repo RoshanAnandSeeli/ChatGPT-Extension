@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Customizer",
+  "description": "Personal visual customizations for chatgpt.com.",
+  "version": "0.1.0",
+  "permissions": ["storage"],
+  "host_permissions": ["https://chatgpt.com/*"],
+  "action": {
+    "default_title": "ChatGPT Customizer",
+    "default_popup": "src/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["src/content/content.js"],
+      "css": ["src/content/content.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
