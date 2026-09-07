@@ -8,6 +8,14 @@ header p { margin-top: 6px; color: #a3a3a3; font-size: 13px; }
 h2 { margin-bottom: 12px; font-size: 14px; }
 .preview { height: 92px; margin-bottom: 12px; overflow: hidden; border: 1px solid #3b3b3b; border-radius: 8px; background: #242424; }
 .preview img { width: 100%; height: 100%; object-fit: cover; }
+.adjustments { margin: 0 0 14px; padding: 12px; border: 1px solid #343434; border-radius: 8px; background: #1e1e1e; }
+.adjustments__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9px; }
+.adjustments h3 { margin: 0; font-size: 12px; }
+.adjustments button { border: 0; padding: 0; background: transparent; color: #d4d4d4; font: inherit; font-size: 12px; text-decoration: underline; cursor: pointer; }
+.range-control { display: block; margin-top: 9px; font-size: 12px; }
+.range-control span { display: flex; justify-content: space-between; color: #d4d4d4; }
+.range-control output { color: #a3a3a3; }
+.range-control input { width: 100%; height: 14px; margin: 4px 0 0; accent-color: #fff; cursor: pointer; }
 #background-input { position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
 .button { box-sizing: border-box; display: block; width: 100%; border: 1px solid transparent; border-radius: 7px; padding: 9px 12px; font: inherit; font-size: 13px; font-weight: 600; text-align: center; cursor: pointer; }
 .button--primary { background: #fff; color: #171717; }
