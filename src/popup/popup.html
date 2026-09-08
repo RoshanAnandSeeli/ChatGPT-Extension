@@ -15,6 +15,13 @@
       <section aria-labelledby="background-title">
         <h2 id="background-title">Background</h2>
         <div id="preview" class="preview" hidden><img id="preview-image" alt="Current background preview" /></div>
+        <div id="adjustments" class="adjustments" hidden>
+          <div class="adjustments__header"><h3>Adjust image</h3><button id="reset-adjustments" type="button">Reset</button></div>
+          <label class="range-control" for="brightness"><span>Brightness <output id="brightness-value">100%</output></span><input id="brightness" type="range" min="50" max="150" value="100" /></label>
+          <label class="range-control" for="blur"><span>Blur <output id="blur-value">0px</output></span><input id="blur" type="range" min="0" max="20" value="0" /></label>
+          <label class="range-control" for="overlay"><span>Dimness <output id="overlay-value">18%</output></span><input id="overlay" type="range" min="0" max="50" value="18" /></label>
+          <label class="range-control" for="scale"><span>Scale <output id="scale-value">100%</output></span><input id="scale" type="range" min="100" max="150" value="100" /></label>
+        </div>
         <label class="button button--primary" for="background-input">Choose Image</label>
         <input id="background-input" type="file" accept="image/jpeg,image/png,image/webp" />
         <button id="remove-background" class="button button--secondary" type="button">Remove Background</button>

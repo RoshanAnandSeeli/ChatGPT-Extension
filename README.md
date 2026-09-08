@@ -1,11 +1,12 @@
 # ChatGPT Customizer
 
-A small, open-source Chrome extension for personalizing the appearance of [ChatGPT](https://chatgpt.com/). Version 0.1.0 adds a persistent custom background image, entirely in the browser.
+A small, open-source Chrome extension for personalizing the appearance of [ChatGPT](https://chatgpt.com/). Version 0.1.1 adds a persistent custom background image and its core visual controls, entirely in the browser.
 
 ## Features
 
 - Custom JPG, PNG, or WEBP background image
 - Persistent local storage and instant updates in open ChatGPT tabs
+- Live brightness, blur, dimness, and scale adjustments
 - Subtle readability overlay
 
 More customization features are planned.
@@ -25,7 +26,7 @@ More customization features are planned.
 - `src/popup/` contains the extension popup UI.
 - Images are stored as data URLs in `chrome.storage.local` for simple, persistent V1 storage.
 
-Images are limited to 3 MB before encoding to leave room within Chrome's local storage quota. The popup validates type, file size, and image decoding before saving.
+Images are limited to 3 MB before encoding to leave room within Chrome's local storage quota. The popup validates type, file size, and image decoding before saving. Image adjustments are saved alongside the selected image.
 
 ## Permissions
 
@@ -38,7 +39,7 @@ Images are limited to 3 MB before encoding to leave room within Chrome's local s
 - [ ] Full-width chat
 - [ ] Font customization
 - [ ] Completion notification sound
-- [ ] More background controls
+- [x] More background controls
 - [ ] More fonts
 - [ ] Additional customization options
 

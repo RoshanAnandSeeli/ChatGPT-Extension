@@ -18,10 +18,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  transform-origin: center;
+  transition: filter 150ms ease, transform 150ms ease;
 }
 
 .chatgpt-customizer-background__overlay {
   background: rgb(0 0 0 / 18%);
+  transition: background-color 150ms ease;
 }
 
 /* Keeps the background behind the app while preserving ChatGPT's own component styles. */
